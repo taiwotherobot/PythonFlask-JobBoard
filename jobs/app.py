@@ -29,11 +29,8 @@ def close_connection(exception):
     connection = getattr(g, '_connection', 'None')
     if connection is not None:
         connection.close()
-    @app.teardown_appcontext
-    
-    
-    
-            
+
+@app.teardown_appcontext        
 
 @app.route('/')
 @app.route('/jobs')
